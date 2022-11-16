@@ -1,5 +1,4 @@
-<?php 
-
+<?php
     class Automobile {
         private $vehicleMake;
         private $vehicleModel;
