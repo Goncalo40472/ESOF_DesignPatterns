@@ -19,7 +19,8 @@
 
         private $bios;
         private $os;
-        public function __construct(BiosInterface $bios, OSInterface $os) {
+        public function __construct(BiosInterface $bios, OSInterface $os)
+        {
             
             $this->bios = $bios;
             $this->os = $os;
@@ -44,3 +45,5 @@
         }
 
     }
+
+\n
