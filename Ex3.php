@@ -1,18 +1,21 @@
 <?php
 
-    interface BiosInterface {
+    interface BiosInterface
+    {
         public function execute();
         public function waitForKeyPress();
         public function launch(OsInterface $os);
         public function powerDown();
     }
 
-    interface OSInterface {
+    interface OSInterface
+    {
         public function halt();
         public function getName(): string;
     }
 
-    class Computer {
+    class Computer
+    {
 
         private $bios;
         private $os;
@@ -23,7 +26,8 @@
 
         }
 
-        public function turnOn() {
+        public function turnOn()
+        {
 
             $this->bios->execute();
             $this->bios->waitForKeyPress();
@@ -31,7 +35,8 @@
 
         }
 
-        public function turnOff() {
+        public function turnOff()
+        {
 
             $this->os->halt();
             $this->bios->powerDown();
