@@ -46,7 +46,7 @@
 
         private static $instance;
 
-        private function __construct(){} //Função construtora
+        private function __construct(){//Função construtora} 
 
         public static function getDBInstance() : DatabaseExample {
 
