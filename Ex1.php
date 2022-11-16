@@ -1,6 +1,6 @@
 <?php
 
-    class Automobile 
+    class Automobile
     {
         private $vehicleMake;
         private $vehicleModel;
@@ -11,14 +11,14 @@
             $this->vehicleModel = $model;
         
         }
-        public function getMakeAndModel() 
+        public function getMakeAndModel()
         {
             
             return $this->vehicleMake . ' ' . $this->vehicleModel;
 
         }
 
-        public static function create($make, $model) 
+        public static function create($make, $model)
         {
 
             return new Automobile($make, $model);
