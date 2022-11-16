@@ -40,7 +40,7 @@
             $pa = $a->getId();
             $pb = $b->getId();
 
-            if($pa == $pb) return 0;
+            if($pa == $pb) { return 0 };
 
             return ($a < $b) ? -1 : 1;
 
